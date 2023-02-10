@@ -49,7 +49,7 @@ function onImageClick(e) {
       },
 
       onClose: instance => {
-        window.addEventListener('keydown', onCloseModale);
+        window.removeEventListener('keydown', onCloseModale);
       },
     }
   );
